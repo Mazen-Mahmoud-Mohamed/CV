@@ -1,173 +1,662 @@
 <!DOCTYPE html>
-<html lang="en,ar">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#080d17">
+    <meta name="description" content="Mazen Mahmoud — Communications &amp; Computers Engineering student, PCB &amp; circuit design technician and Python automation engineer based in Egypt.">
+    <meta name="author" content="Mazen Mahmoud">
+    <title>Mazen Mahmoud — Electronics &amp; Automation Engineer | CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap">
     <link rel="stylesheet" href="mazen.css">
-    <title>Mazen Mahmoud - CV</title>
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a class="logo" href="#"><h2>Mazen Mahmoud</h2></a>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/mazen-mahmoud-87b583360/">LinkedIn</a></li>
-                <li><a href="https://github.com/meno-ultra">GitHub</a></li>
+
+<!-- ============================================================
+     Icon sprite — inline SVG symbols, referenced with <use>
+     ============================================================ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5.25" width="18" height="13.5" rx="2.5"/><path d="m3.75 7.5 8.25 5.75L20.25 7.5"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.4 3.5h3l1.5 4-2.1 1.5a12.2 12.2 0 0 0 6.2 6.2l1.5-2.1 4 1.5v3a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.4 5.7 2 2 0 0 1 6.4 3.5Z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21.2s6.6-5.6 6.6-10.7a6.6 6.6 0 1 0-13.2 0C5.4 15.6 12 21.2 12 21.2Z"/><circle cx="12" cy="10.4" r="2.5"/>
+    </symbol>
+    <symbol id="i-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3.8 2.6 8.4 12 13l9.4-4.6L12 3.8Z"/><path d="M6.2 10.6V16c0 1.8 2.6 3.2 5.8 3.2s5.8-1.4 5.8-3.2v-5.4"/><path d="M21.4 8.4v5.2"/>
+    </symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.8" y="7.2" width="18.4" height="12" rx="2.2"/><path d="M9 7.2V5.9A1.9 1.9 0 0 1 10.9 4h2.2A1.9 1.9 0 0 1 15 5.9v1.3"/><path d="M2.8 12.4h18.4"/>
+    </symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3.2 20 7.6v8.8L12 20.8 4 16.4V7.6L12 3.2Z"/><path d="M4 7.6 12 12l8-4.4M12 12v8.8"/>
+    </symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7.75" y="7.75" width="8.5" height="8.5" rx="1.6"/><path d="M4 10h3.75M4 14h3.75M16.25 10H20M16.25 14H20M10 4v3.75M14 4v3.75M10 16.25V20M14 16.25V20"/>
+    </symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="9.4" r="5.6"/><path d="m8.5 14.2-1 6.4 4.5-2.5 4.5 2.5-1-6.4"/>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18.5 14.5v4A1.5 1.5 0 0 1 17 20H5.5A1.5 1.5 0 0 1 4 18.5V7A1.5 1.5 0 0 1 5.5 5.5h4"/>
+    </symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 9.2V4.4h10v4.8"/><path d="M7 17H5a2 2 0 0 1-2-2v-3.8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2V15a2 2 0 0 1-2 2h-2"/><rect x="7" y="13.6" width="10" height="6" rx="1.2"/>
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="8.8"/><path d="M3.2 12h17.6"/><path d="M12 3.2c2.5 2.4 3.9 5.5 3.9 8.8S14.5 18.4 12 20.8c-2.5-2.4-3.9-5.5-3.9-8.8S9.5 5.6 12 3.2Z"/>
+    </symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 7.5 4.5 12 9 16.5M15 7.5 19.5 12 15 16.5"/>
+    </symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 8.5h6.5M15.5 8.5H20M4 15.5h3.5M12.5 15.5H20"/><circle cx="13" cy="8.5" r="2.4"/><circle cx="10" cy="15.5" r="2.4"/>
+    </symbol>
+    <symbol id="i-shapes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.8 3.6 20.4 9.2 9.2 20.4 3.6 14.8 14.8 3.6Z"/><path d="m8 10.4 1.8 1.8M11.6 6.8l1.8 1.8"/>
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9.2" cy="8" r="3.6"/><path d="M2.6 20c0-3.4 2.9-5.6 6.6-5.6s6.6 2.2 6.6 5.6"/><path d="M16.4 5.1a3.6 3.6 0 0 1 0 6.7M18 14.9c2.1.7 3.4 2.3 3.4 4.4"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3.2l1.95 5.35L19.3 10.5l-5.35 1.95L12 17.8l-1.95-5.35L4.7 10.5l5.35-1.95L12 3.2Z"/><path d="M18.6 16.4l.7 1.9 1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7.7-1.9Z"/>
+    </symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.5 12h15M13.5 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+        <path d="m6.5 6.5 11 11M17.5 6.5l-11 11"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.2 9.1h3.6V21H3.2zM9.4 9.1H13v1.7h.05c.5-.92 1.72-1.9 3.55-1.9 2.78 0 4 1.72 4 4.9V21h-3.6v-6.3c0-1.52-.55-2.55-1.9-2.55-1.15 0-1.8.77-2.1 1.5-.1.27-.13.64-.13 1.02V21H9.4z"/>
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.11-.25-.45-1.27.1-2.65 0 0 .83-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2.2Z"/>
+    </symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================
+     Header
+     ============================================================ -->
+<header class="site-header" id="site-header">
+    <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar"></span></div>
+
+    <div class="shell site-header__inner">
+        <a class="brand" href="#top">
+            <span class="brand__mark" aria-hidden="true">MM</span>
+            <span class="brand__text">
+                <span class="brand__name">Mazen Mahmoud</span>
+                <span class="brand__role">Electronics &amp; Automation</span>
+            </span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            <svg class="icon nav-toggle__open" aria-hidden="true"><use href="#i-menu"></use></svg>
+            <svg class="icon nav-toggle__close" aria-hidden="true"><use href="#i-close"></use></svg>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+            <ul class="primary-nav__list">
+                <li><a class="nav-link is-active" href="#top">Overview</a></li>
+                <li><a class="nav-link" href="#resume">Résumé</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
+
+            <div class="primary-nav__actions">
+                <a class="icon-btn" href="https://www.linkedin.com/in/mazen-mahmoud-529120394" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon icon--brand" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+                    <span class="sr-only">LinkedIn profile (opens in a new tab)</span>
+                </a>
+                <a class="icon-btn" href="https://github.com/Mazen-Mahmoud-Mohamed" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon icon--brand" aria-hidden="true"><use href="#i-github"></use></svg>
+                    <span class="sr-only">GitHub profile (opens in a new tab)</span>
+                </a>
+                <button class="btn btn--ghost btn--sm" type="button" data-print>
+                    <svg class="icon" aria-hidden="true"><use href="#i-printer"></use></svg>
+                    <span>Save PDF</span>
+                </button>
+            </div>
         </nav>
-        <div class="content">
-            <div class="text">
-                
-                <p class="contact-info">0100-266-7790 | <a href="mailto:m.mahmoud0179@nub.edu.eg">m.mahmoud0179@nub.edu.eg</a></p>
-                
-                <div class="section-buttons">
-                    <button class="section-btn" onclick="toggleSection('education', event)">Education</button>
-                    <button class="section-btn" onclick="toggleSection('experience', event)">Experience</button>
-                    <button class="section-btn" onclick="toggleSection('projects', event)">Projects</button>
-                    <button class="section-btn" onclick="toggleSection('skills', event)">Technical Skills</button>
-                    <button class="section-btn" onclick="toggleSection('certifications', event)">Certifications</button>
+    </div>
+</header>
+
+<main id="main">
+    <!-- ========================================================
+         Hero
+         ======================================================== -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="shell hero__inner">
+            <div class="hero__text">
+                <p class="eyebrow reveal">
+                    <span class="eyebrow__dot" aria-hidden="true"></span>
+                    Beni Suef &amp; Cairo, Egypt
+                </p>
+
+                <h1 class="hero__name reveal" id="hero-name">Mazen Mahmoud</h1>
+
+                <p class="hero__title reveal">
+                    <span>Electronics Technician</span>
+                    <span>PCB &amp; Circuit Design</span>
+                    <span>Python Automation</span>
+                </p>
+
+                <p class="hero__intro reveal">
+                    Communications &amp; Computers Engineering undergraduate at Nahda University,
+                    designing and repairing hardware since 2021 and building Python automation
+                    that cut manual work by 70% for a small startup team.
+                </p>
+
+                <ul class="hero__contact reveal">
+                    <li>
+                        <a class="contact-chip" href="tel:+201558905441">
+                            <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+                            <span>0155-890-5441</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-chip" href="mailto:m.mahmoud0179@outlook.com">
+                            <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                            <span>m.mahmoud0179@outlook.com</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hero__actions reveal">
+                    <a class="btn btn--primary" href="mailto:m.mahmoud0179@outlook.com">
+                        <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                        <span>Get in touch</span>
+                    </a>
+                    <a class="btn btn--secondary" href="#resume">
+                        <span>View résumé</span>
+                        <svg class="icon btn__arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+                    </a>
+                    <button class="btn btn--ghost hero__print" type="button" data-print>
+                        <svg class="icon" aria-hidden="true"><use href="#i-printer"></use></svg>
+                        <span>Save as PDF</span>
+                    </button>
+                </div>
+            </div>
+
+            <aside class="hero__card reveal" aria-label="Profile summary">
+                <div class="avatar" data-avatar>
+                    <img class="avatar__img" src="logo.png" alt="Portrait of Mazen Mahmoud" width="320" height="320" loading="eager" decoding="async">
+                    <span class="avatar__monogram" aria-hidden="true">MM</span>
                 </div>
 
-                <div id="education" class="section-content">
-                    <p><strong>Nahda University</strong> - Beni Suef, EG<br>
-                    Bachelor of Engineering, Minor in Communications & Computers Engineering (in progress)<br>
-                    Oct 2023 – May 2028</p>
-                    <ul>
-                        <li>Level 2 Student</li>
-                        <li>GPA: 2.24</li>
-                    </ul>
-                </div>
+                <dl class="facts">
+                    <div class="facts__row">
+                        <dt>Focus</dt>
+                        <dd>Hardware &amp; Automation</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Degree</dt>
+                        <dd>B.Eng. Comms &amp; Computers</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Experience</dt>
+                        <dd>Since Aug 2021</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Languages</dt>
+                        <dd>Arabic (Native) · English (C1)</dd>
+                    </div>
+                </dl>
+            </aside>
+        </div>
+    </section>
 
-                <div id="experience" class="section-content">
-                    <p><strong>Electrical Technician – PCB & Circuit Design</strong><br>
-                    INFINITY Total-Com Solutions - Zahraa Elmaadi, Cairo<br>
-                    Aug 2021 – Present</p>
-                    <ul>
-                        <li>Troubleshot and repaired electronic boards and circuits for various consumer and industrial devices</li>
-                        <li>Designed PCB layouts using tools like EasyEDA, Flux, or Proteus for prototyping and small-scale projects</li>
-                        <li>Performed soldering and desoldering of electronic components (SMD and THT) with high precision</li>
-                        <li>Assembled, tested, and verified the functionality of electronic circuits to ensure performance</li>
-                        <li>Read and interpreted electrical schematics and component datasheets</li>
-                        <li>Modified and reworked existing PCBs to improve performance or fix design errors</li>
-                        <li>Designing and developing a company website using HTML, CSS, and JavaScript (in progress)</li>
-                    </ul>
+    <!-- ========================================================
+         Résumé (tabbed)
+         ======================================================== -->
+    <section class="section" id="resume" aria-labelledby="resume-heading">
+        <div class="shell">
+            <header class="section__head reveal">
+                <p class="section__eyebrow">
+                    <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+                    <span>Résumé</span>
+                </p>
+                <h2 class="section__title" id="resume-heading">Background &amp; capabilities</h2>
+                <p class="section__lead">
+                    Education, hands-on roles, projects, technical skills and certifications —
+                    grouped so you can jump straight to what matters.
+                </p>
+            </header>
 
-                    <p><strong>Tech Team Member</strong><br>
-                    IEEE NUB Student Branch - Beni Suef, EG<br>
-                    Nov 2023 – Present</p>
-                    <ul>
-                        <li>Contributed to technical events and collaborative student-led projects within the branch</li>
-                        <li>Served as Head of PCB & Circuit Design and Vice Head of the 3D Printing Sub-Team</li>
-                        <li>Led design and innovation initiatives, provided training, and oversaw development of hands-on technical projects</li>
-                    </ul>
+            <div class="tabs reveal" role="tablist" aria-label="Résumé sections">
+                <button class="tab" type="button" role="tab" id="tab-education" aria-controls="education" aria-selected="true" data-tab="education">
+                    <svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg>
+                    <span>Education</span>
+                </button>
+                <button class="tab" type="button" role="tab" id="tab-experience" aria-controls="experience" aria-selected="false" tabindex="-1" data-tab="experience">
+                    <svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg>
+                    <span>Experience</span>
+                </button>
+                <button class="tab" type="button" role="tab" id="tab-projects" aria-controls="projects" aria-selected="false" tabindex="-1" data-tab="projects">
+                    <svg class="icon" aria-hidden="true"><use href="#i-cube"></use></svg>
+                    <span>Projects</span>
+                </button>
+                <button class="tab" type="button" role="tab" id="tab-skills" aria-controls="skills" aria-selected="false" tabindex="-1" data-tab="skills">
+                    <svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg>
+                    <span>Technical Skills</span>
+                </button>
+                <button class="tab" type="button" role="tab" id="tab-certifications" aria-controls="certifications" aria-selected="false" tabindex="-1" data-tab="certifications">
+                    <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                    <span>Certifications</span>
+                </button>
+            </div>
 
-                    <p><strong>Python Automation Script Engineer</strong><br>
-                    College Friends' Startup - Cairo, EG<br>
-                    May 2024 – Present</p>
-                    <ul>
-                        <li>Creating and developing automation scripts using Python to improve workflows and streamline repetitive tasks, reducing time wastage by 70% and increasing profits by approximately 50%</li>
-                        <li>Writing efficient, maintainable code for various automation processes</li>
-                        <li>Testing scripts to ensure quality and performance</li>
-                        <li>Updating and enhancing existing scripts to meet evolving business needs</li>
-                        <li>Collaborating with technical teams to understand requirements and deliver custom software solutions</li>
-                    </ul>
-                </div>
-
-                <div id="projects" class="section-content">
-                    <p><strong>3D Printer (Graduation Project)</strong> | C, C++, Arduino<br>
-                    Oct 2022 – Oct 2023</p>
-                    <ul>
-                        <li>Designed and built a functional 3D printer for school graduation</li>
-                        <li>Managed hardware setup and calibration using Arduino-based control systems</li>
-                        <li>Showcased practical knowledge of CAD, stepper motors, and firmware tuning</li>
-                    </ul>
-                </div>
-
-                <div id="skills" class="section-content">
-                    <h3 class="underlined">Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-col">
-                            <h4>Languages</h4>
-                            <ul>
-                                <li>Arabic (Native)</li>
-                                <li>English (C1 Advanced)</li>
-                            </ul>
-                            <h4>Programming</h4>
-                            <ul>
-                                <li>Python</li>
-                                <li>C / C++</li>
-                                <li>JavaScript</li>
-                                <li>HTML / CSS</li>
-                            </ul>
+            <div class="panels">
+                <!-- Education -->
+                <div class="panel is-active" id="education" role="tabpanel" aria-labelledby="tab-education" tabindex="0">
+                    <h3 class="sr-only">Education</h3>
+                    <article class="card entry">
+                        <div class="entry__head">
+                            <div class="entry__identity">
+                                <h4 class="entry__title">Nahda University</h4>
+                                <p class="entry__org">Bachelor of Engineering — Minor in Communications &amp; Computers Engineering</p>
+                            </div>
+                            <div class="entry__meta">
+                                <span class="chip chip--date">Oct 2023 – May 2028</span>
+                                <span class="entry__loc">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+                                    <span>Beni Suef, EG</span>
+                                </span>
+                            </div>
                         </div>
-                        <div class="skill-col">
-                            <h4>Tools & IDEs</h4>
-                            <ul>
-                                <li>Git, VS Code, Visual Studio</li>
-                                <li>PyCharm, Arduino IDE, Code::Blocks</li>
-                            </ul>
-                            <h4>Design & CAD</h4>
-                            <ul>
-                                <li>AutoCAD, Fusion 360</li>
-                                <li>EasyEDA, Flux, Proteus</li>
-                            </ul>
-                            <h4>Soft Skills</h4>
-                            <ul>
-                                <li>Problem Solving</li>
-                                <li>Teamwork & Communication</li>
-                                <li>Self-motivated, Fast Learner</li>
-                            </ul>
-                        </div>
+                        <ul class="stats">
+                            <li class="stat">
+                                <span class="stat__value">Level 3</span>
+                                <span class="stat__label">Current year</span>
+                            </li>
+                            <li class="stat">
+                                <span class="stat__value">2.21</span>
+                                <span class="stat__label">GPA</span>
+                            </li>
+                            <li class="stat">
+                                <span class="stat__value">In progress</span>
+                                <span class="stat__label">Degree status</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- Experience -->
+                <div class="panel" id="experience" role="tabpanel" aria-labelledby="tab-experience" tabindex="0" hidden>
+                    <h3 class="sr-only">Experience</h3>
+                    <ol class="timeline">
+                        <li class="timeline__item">
+                            <span class="timeline__marker" aria-hidden="true"></span>
+                            <article class="card entry">
+                                <div class="entry__head">
+                                    <div class="entry__identity">
+                                        <h4 class="entry__title">Electrical Technician — PCB &amp; Circuit Design</h4>
+                                        <p class="entry__org">INFINITY Total-Com Solutions</p>
+                                    </div>
+                                    <div class="entry__meta">
+                                        <span class="chip chip--date chip--current">Aug 2021 – Present</span>
+                                        <span class="entry__loc">
+                                            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+                                            <span>Zahraa Elmaadi, Cairo</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul class="bullets">
+                                    <li>Troubleshot and repaired electronic boards and circuits for various consumer and industrial devices</li>
+                                    <li>Designed PCB layouts using tools like EasyEDA, Flux, or Proteus for prototyping and small-scale projects</li>
+                                    <li>Performed soldering and desoldering of electronic components (SMD and THT) with high precision</li>
+                                    <li>Assembled, tested, and verified the functionality of electronic circuits to ensure performance</li>
+                                    <li>Read and interpreted electrical schematics and component datasheets</li>
+                                    <li>Modified and reworked existing PCBs to improve performance or fix design errors</li>
+                                    <li>Designing and developing a company website using HTML, CSS, and JavaScript (in progress)</li>
+                                </ul>
+                                <ul class="tags">
+                                    <li class="tag">EasyEDA</li>
+                                    <li class="tag">Flux</li>
+                                    <li class="tag">Proteus</li>
+                                    <li class="tag">SMD &amp; THT</li>
+                                    <li class="tag">Schematics</li>
+                                    <li class="tag">HTML / CSS / JS</li>
+                                </ul>
+                            </article>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__marker" aria-hidden="true"></span>
+                            <article class="card entry">
+                                <div class="entry__head">
+                                    <div class="entry__identity">
+                                        <h4 class="entry__title">Tech Team Member</h4>
+                                        <p class="entry__org">IEEE NUB Student Branch</p>
+                                    </div>
+                                    <div class="entry__meta">
+                                        <span class="chip chip--date chip--current">Nov 2023 – Present</span>
+                                        <span class="entry__loc">
+                                            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+                                            <span>Beni Suef, EG</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul class="bullets">
+                                    <li>Contributed to technical events and collaborative student-led projects within the branch</li>
+                                    <li>Served as Head of PCB &amp; Circuit Design and Vice Head of the 3D Printing Sub-Team</li>
+                                    <li>Led design and innovation initiatives, provided training, and oversaw development of hands-on technical projects</li>
+                                </ul>
+                                <ul class="tags">
+                                    <li class="tag">Leadership</li>
+                                    <li class="tag">PCB Design</li>
+                                    <li class="tag">3D Printing</li>
+                                    <li class="tag">Training</li>
+                                </ul>
+                            </article>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__marker" aria-hidden="true"></span>
+                            <article class="card entry">
+                                <div class="entry__head">
+                                    <div class="entry__identity">
+                                        <h4 class="entry__title">Python Automation Script Engineer</h4>
+                                        <p class="entry__org">College Friends' Startup</p>
+                                    </div>
+                                    <div class="entry__meta">
+                                        <span class="chip chip--date chip--current">May 2024 – Present</span>
+                                        <span class="entry__loc">
+                                            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+                                            <span>Cairo, EG</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul class="bullets">
+                                    <li>Creating and developing automation scripts using Python to improve workflows and streamline repetitive tasks, reducing time wastage by 70% and increasing profits by approximately 50%</li>
+                                    <li>Writing efficient, maintainable code for various automation processes</li>
+                                    <li>Testing scripts to ensure quality and performance</li>
+                                    <li>Updating and enhancing existing scripts to meet evolving business needs</li>
+                                    <li>Collaborating with technical teams to understand requirements and deliver custom software solutions</li>
+                                </ul>
+                                <ul class="tags">
+                                    <li class="tag">Python</li>
+                                    <li class="tag">Automation</li>
+                                    <li class="tag">Testing</li>
+                                    <li class="tag">Maintainable code</li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Projects -->
+                <div class="panel" id="projects" role="tabpanel" aria-labelledby="tab-projects" tabindex="0" hidden>
+                    <h3 class="sr-only">Projects</h3>
+                    <div class="grid grid--projects">
+                        <article class="card card--interactive project project--featured">
+                            <div class="project__aside">
+                                <div class="project__head">
+                                    <span class="tile" aria-hidden="true">
+                                        <svg class="icon" aria-hidden="true"><use href="#i-cube"></use></svg>
+                                    </span>
+                                    <span class="chip chip--accent">Graduation project</span>
+                                </div>
+                                <h4 class="project__title">3D Printer</h4>
+                                <p class="project__dates">Oct 2022 – Oct 2023</p>
+                                <ul class="tags">
+                                    <li class="tag">C</li>
+                                    <li class="tag">C++</li>
+                                    <li class="tag">Arduino</li>
+                                    <li class="tag">CAD</li>
+                                </ul>
+                            </div>
+                            <div class="project__body">
+                                <ul class="bullets">
+                                    <li>Designed and built a functional 3D printer for school graduation</li>
+                                    <li>Managed hardware setup and calibration using Arduino-based control systems</li>
+                                    <li>Showcased practical knowledge of CAD, stepper motors, and firmware tuning</li>
+                                </ul>
+                            </div>
+                        </article>
                     </div>
                 </div>
 
-                <div id="certifications" class="section-content">
-                    <h3 class="underlined">Certifications</h3>
-                    <ul>
-                        <li><strong>EF SET English:</strong> C1 Advanced (63/100) — <a href="https://cert.efset.org/en/k2sVTN" target="_blank" rel="noopener">View     </a> (Jun 2025)</li>
-                        <li><strong>Mimo Python Certificate:</strong> Core Python — <a href="https://drive.google.com/file/d/143SuVdyygT7Td1cofAJBPV1dySEh62hA/view" target="_blank" rel="noopener">View</a>       (Nov 2024)</li>
-                        <li><strong>Mimo Python AI Development:</strong> Intro to AI — <a href="https://drive.google.com/file/d/1NQxS57YZ7nRFaO41RlLIKm_TKRCz8ybk/view" target="_blank" rel="noopener">View</a>     (Nov 2024)</li>
-                    </ul>
+                <!-- Technical skills -->
+                <div class="panel" id="skills" role="tabpanel" aria-labelledby="tab-skills" tabindex="0" hidden>
+                    <h3 class="sr-only">Technical skills</h3>
+                    <div class="grid grid--skills">
+                        <article class="card card--interactive skill-card">
+                            <div class="skill-card__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg>
+                                </span>
+                                <h4 class="skill-card__title">Languages</h4>
+                            </div>
+                            <ul class="levels">
+                                <li class="level">
+                                    <span class="level__name">Arabic</span>
+                                    <span class="level__value">Native</span>
+                                </li>
+                                <li class="level">
+                                    <span class="level__name">English</span>
+                                    <span class="level__value">C1 Advanced</span>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card card--interactive skill-card">
+                            <div class="skill-card__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-terminal"></use></svg>
+                                </span>
+                                <h4 class="skill-card__title">Programming</h4>
+                            </div>
+                            <ul class="tags">
+                                <li class="tag">Python</li>
+                                <li class="tag">C</li>
+                                <li class="tag">C++</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                            </ul>
+                        </article>
+
+                        <article class="card card--interactive skill-card">
+                            <div class="skill-card__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-sliders"></use></svg>
+                                </span>
+                                <h4 class="skill-card__title">Tools &amp; IDEs</h4>
+                            </div>
+                            <ul class="tags">
+                                <li class="tag">Git</li>
+                                <li class="tag">VS Code</li>
+                                <li class="tag">Visual Studio</li>
+                                <li class="tag">PyCharm</li>
+                                <li class="tag">Arduino IDE</li>
+                                <li class="tag">Code::Blocks</li>
+                            </ul>
+                        </article>
+
+                        <article class="card card--interactive skill-card">
+                            <div class="skill-card__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-shapes"></use></svg>
+                                </span>
+                                <h4 class="skill-card__title">Design &amp; CAD</h4>
+                            </div>
+                            <ul class="tags">
+                                <li class="tag">AutoCAD</li>
+                                <li class="tag">Fusion 360</li>
+                                <li class="tag">EasyEDA</li>
+                                <li class="tag">Flux</li>
+                                <li class="tag">Proteus</li>
+                            </ul>
+                        </article>
+
+                        <article class="card card--interactive skill-card">
+                            <div class="skill-card__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg>
+                                </span>
+                                <h4 class="skill-card__title">Soft Skills</h4>
+                            </div>
+                            <ul class="tags">
+                                <li class="tag">Problem Solving</li>
+                                <li class="tag">Teamwork</li>
+                                <li class="tag">Communication</li>
+                                <li class="tag">Self-motivated</li>
+                                <li class="tag">Fast Learner</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="panel" id="certifications" role="tabpanel" aria-labelledby="tab-certifications" tabindex="0" hidden>
+                    <h3 class="sr-only">Certifications</h3>
+                    <div class="grid grid--certs">
+                        <article class="card card--interactive cert">
+                            <div class="cert__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                                </span>
+                                <span class="chip chip--date">Jun 2025</span>
+                            </div>
+                            <h4 class="cert__title">EF SET English</h4>
+                            <p class="cert__detail">C1 Advanced — 63/100</p>
+                            <a class="link link--external" href="https://cert.efset.org/en/k2sVTN" target="_blank" rel="noopener noreferrer">
+                                <span>View credential</span>
+                                <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+                                <span class="sr-only">(opens in a new tab)</span>
+                            </a>
+                        </article>
+
+                        <article class="card card--interactive cert">
+                            <div class="cert__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                                </span>
+                                <span class="chip chip--date">Nov 2024</span>
+                            </div>
+                            <h4 class="cert__title">Mimo Python Certificate</h4>
+                            <p class="cert__detail">Core Python</p>
+                            <a class="link link--external" href="https://drive.google.com/file/d/143SuVdyygT7Td1cofAJBPV1dySEh62hA/view" target="_blank" rel="noopener noreferrer">
+                                <span>View credential</span>
+                                <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+                                <span class="sr-only">(opens in a new tab)</span>
+                            </a>
+                        </article>
+
+                        <article class="card card--interactive cert">
+                            <div class="cert__head">
+                                <span class="tile" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                                </span>
+                                <span class="chip chip--date">Nov 2024</span>
+                            </div>
+                            <h4 class="cert__title">Mimo Python AI Development</h4>
+                            <p class="cert__detail">Introduction to AI</p>
+                            <a class="link link--external" href="https://drive.google.com/file/d/1NQxS57YZ7nRFaO41RlLIKm_TKRCz8ybk/view" target="_blank" rel="noopener noreferrer">
+                                <span>View credential</span>
+                                <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+                                <span class="sr-only">(opens in a new tab)</span>
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </div>
-            <div class="image">
-                <img title="Mazen Mahmoud" src="logo.png" alt="Mazen Mahmoud">
+        </div>
+    </section>
+
+    <!-- ========================================================
+         Contact
+         ======================================================== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="shell">
+            <header class="section__head reveal">
+                <p class="section__eyebrow">
+                    <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                    <span>Contact</span>
+                </p>
+                <h2 class="section__title" id="contact-heading">Let's build something</h2>
+                <p class="section__lead">
+                    Open to internships and freelance work in electronics, PCB design and Python automation.
+                </p>
+            </header>
+
+            <div class="grid grid--contact reveal">
+                <a class="card card--interactive contact-card" href="mailto:m.mahmoud0179@outlook.com">
+                    <span class="tile" aria-hidden="true">
+                        <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                    </span>
+                    <span class="contact-card__label">Email</span>
+                    <span class="contact-card__value">m.mahmoud0179@outlook.com</span>
+                    <span class="contact-card__cta">
+                        <span>Send a message</span>
+                        <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+                    </span>
+                </a>
+
+                <a class="card card--interactive contact-card" href="tel:+201558905441">
+                    <span class="tile" aria-hidden="true">
+                        <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+                    </span>
+                    <span class="contact-card__label">Phone</span>
+                    <span class="contact-card__value">0155-890-5441</span>
+                    <span class="contact-card__cta">
+                        <span>Call directly</span>
+                        <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+                    </span>
+                </a>
+
+                <a class="card card--interactive contact-card" href="https://www.linkedin.com/in/mazen-mahmoud-529120394" target="_blank" rel="noopener noreferrer">
+                    <span class="tile" aria-hidden="true">
+                        <svg class="icon icon--brand" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+                    </span>
+                    <span class="contact-card__label">LinkedIn</span>
+                    <span class="contact-card__value">mazen-mahmoud-529120394</span>
+                    <span class="contact-card__cta">
+                        <span>View profile</span>
+                        <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+                        <span class="sr-only">(opens in a new tab)</span>
+                    </span>
+                </a>
+
+                <a class="card card--interactive contact-card" href="https://github.com/Mazen-Mahmoud-Mohamed" target="_blank" rel="noopener noreferrer">
+                    <span class="tile" aria-hidden="true">
+                        <svg class="icon icon--brand" aria-hidden="true"><use href="#i-github"></use></svg>
+                    </span>
+                    <span class="contact-card__label">GitHub</span>
+                    <span class="contact-card__value">Mazen-Mahmoud-Mohamed</span>
+                    <span class="contact-card__cta">
+                        <span>See the code</span>
+                        <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+                        <span class="sr-only">(opens in a new tab)</span>
+                    </span>
+                </a>
             </div>
         </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="shell site-footer__inner">
+        <p class="site-footer__copy">© <span data-year>2026</span> Mazen Mahmoud</p>
+        <p class="site-footer__note">Built with HTML, CSS &amp; JavaScript</p>
     </div>
+</footer>
 
-    <script>
-        // Initially hide all sections except education
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section-content');
-            sections.forEach(section => {
-                if (section.id !== 'education') {
-                    section.style.display = 'none';
-                }
-            });
-        });
-
-        function toggleSection(sectionId, ev) {
-            const sections = document.querySelectorAll('.section-content');
-            const buttons = document.querySelectorAll('.section-btn');
-            
-            // Hide all sections
-            sections.forEach(section => {
-                section.style.display = 'none';
-            });
-            
-            // Remove active class from all buttons
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
-            
-            // Show selected section
-            const el = document.getElementById(sectionId);
-            if (el) el.style.display = 'block';
-            
-            // Add active class to clicked button (if event provided)
-            if (ev && ev.currentTarget) ev.currentTarget.classList.add('active');
-        }
-    </script>
+<script src="main.js" defer></script>
 </body>
-</html> 
+</html>
