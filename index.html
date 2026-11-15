@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark">
-    <meta name="theme-color" content="#080d17">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#f6f3ec">
     <meta name="description" content="Mazen Mahmoud — Communications &amp; Computers Engineering student, PCB &amp; circuit design technician and Python automation engineer based in Egypt.">
     <meta name="author" content="Mazen Mahmoud">
     <title>Mazen Mahmoud — Electronics &amp; Automation Engineer | CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap">
-    <link rel="stylesheet" href="mazen.css">
-    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23f6f3ec'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='47' fill='%238c482b'%3EM%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="mazen.css?v=20261113.2">
 </head>
 <body>
 
@@ -98,7 +98,7 @@
             <span class="brand__mark" aria-hidden="true">MM</span>
             <span class="brand__text">
                 <span class="brand__name">Mazen Mahmoud</span>
-                <span class="brand__role">Electronics &amp; Automation</span>
+                <span class="brand__role">Personal résumé</span>
             </span>
         </a>
 
@@ -110,7 +110,7 @@
 
         <nav class="primary-nav" id="primary-nav" aria-label="Primary">
             <ul class="primary-nav__list">
-                <li><a class="nav-link is-active" href="#top">Overview</a></li>
+                <li><a class="nav-link is-active" href="#top" aria-current="location">About</a></li>
                 <li><a class="nav-link" href="#resume">Résumé</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
@@ -126,39 +126,35 @@
                 </a>
                 <button class="btn btn--ghost btn--sm" type="button" data-print>
                     <svg class="icon" aria-hidden="true"><use href="#i-printer"></use></svg>
-                    <span>Save PDF</span>
+                    <span>Save résumé</span>
                 </button>
             </div>
         </nav>
     </div>
 </header>
 
-<main id="main">
+<main id="main" tabindex="-1">
     <!-- ========================================================
          Hero
          ======================================================== -->
     <section class="hero" id="top" aria-labelledby="hero-name">
-        <div class="hero__glow" aria-hidden="true"></div>
-
         <div class="shell hero__inner">
             <div class="hero__text">
                 <p class="eyebrow reveal">
-                    <span class="eyebrow__dot" aria-hidden="true"></span>
+                    <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
                     Beni Suef &amp; Cairo, Egypt
                 </p>
 
-                <h1 class="hero__name reveal" id="hero-name">Mazen Mahmoud</h1>
+                <h1 class="hero__name reveal" id="hero-name">Mazen <span>Mahmoud<span class="hero__period">.</span></span></h1>
 
                 <p class="hero__title reveal">
-                    <span>Electronics Technician</span>
-                    <span>PCB &amp; Circuit Design</span>
-                    <span>Python Automation</span>
+                    Electronics technician &amp; engineering student
                 </p>
 
                 <p class="hero__intro reveal">
-                    Communications &amp; Computers Engineering undergraduate at Nahda University,
-                    designing and repairing hardware since 2021 and building Python automation
-                    that cut manual work by 70% for a small startup team.
+                    I’m studying Communications &amp; Computers Engineering at Nahda University.
+                    I repair electronics, design circuit boards, and write Python scripts
+                    that save time on repetitive work.
                 </p>
 
                 <ul class="hero__contact reveal">
@@ -179,44 +175,34 @@
                 <div class="hero__actions reveal">
                     <a class="btn btn--primary" href="mailto:m.mahmoud0179@outlook.com">
                         <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
-                        <span>Get in touch</span>
+                        <span>Say hello</span>
                     </a>
                     <a class="btn btn--secondary" href="#resume">
                         <span>View résumé</span>
                         <svg class="icon btn__arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
                     </a>
-                    <button class="btn btn--ghost hero__print" type="button" data-print>
-                        <svg class="icon" aria-hidden="true"><use href="#i-printer"></use></svg>
-                        <span>Save as PDF</span>
-                    </button>
                 </div>
+                <p class="availability"><span class="eyebrow__dot" aria-hidden="true"></span>Open to internships &amp; freelance projects</p>
             </div>
 
-            <aside class="hero__card reveal" aria-label="Profile summary">
+            <figure class="hero__card reveal">
                 <div class="avatar" data-avatar>
-                    <img class="avatar__img" src="logo.png" alt="Portrait of Mazen Mahmoud" width="320" height="320" loading="eager" decoding="async">
+                    <img class="avatar__img" src="portrait.webp" alt="Portrait of Mazen Mahmoud" width="720" height="1008" loading="eager" fetchpriority="high" decoding="async">
                     <span class="avatar__monogram" aria-hidden="true">MM</span>
                 </div>
 
-                <dl class="facts">
-                    <div class="facts__row">
-                        <dt>Focus</dt>
-                        <dd>Hardware &amp; Automation</dd>
-                    </div>
-                    <div class="facts__row">
-                        <dt>Degree</dt>
-                        <dd>B.Eng. Comms &amp; Computers</dd>
-                    </div>
-                    <div class="facts__row">
-                        <dt>Experience</dt>
-                        <dd>Since Aug 2021</dd>
-                    </div>
-                    <div class="facts__row">
-                        <dt>Languages</dt>
-                        <dd>Arabic (Native) · English (C1)</dd>
-                    </div>
-                </dl>
-            </aside>
+                <figcaption class="portrait-caption">
+                    <span>Mazen Mahmoud</span>
+                    <span>Based in Egypt <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg></span>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="shell">
+            <dl class="highlights" aria-label="Career highlights">
+                <div class="highlight"><dt>Electronics experience</dt><dd>Since <strong>2021</strong><span>Board repair &amp; circuit design</span></dd></div>
+                <div class="highlight"><dt>Python automation</dt><dd><strong>70%</strong><span>Less time on repetitive work</span></dd></div>
+                <div class="highlight"><dt>English proficiency</dt><dd><strong>C1</strong> Advanced<span>EF SET certified · 63/100</span></dd></div>
+            </dl>
         </div>
     </section>
 
@@ -227,43 +213,39 @@
         <div class="shell">
             <header class="section__head reveal">
                 <p class="section__eyebrow">
-                    <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
-                    <span>Résumé</span>
+                    <span class="section__number">01 /</span><span>Background</span>
                 </p>
-                <h2 class="section__title" id="resume-heading">Background &amp; capabilities</h2>
-                <p class="section__lead">
-                    Education, hands-on roles, projects, technical skills and certifications —
-                    grouped so you can jump straight to what matters.
-                </p>
+                <h2 class="section__title" id="resume-heading">My résumé</h2>
             </header>
 
-            <div class="tabs reveal" role="tablist" aria-label="Résumé sections">
+            <div class="resume-layout">
+            <div class="tabs" role="tablist" aria-label="Résumé sections">
                 <button class="tab" type="button" role="tab" id="tab-education" aria-controls="education" aria-selected="true" data-tab="education">
                     <svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg>
-                    <span>Education</span>
+                    <span>Education</span><span class="tab__count" aria-hidden="true">01</span>
                 </button>
                 <button class="tab" type="button" role="tab" id="tab-experience" aria-controls="experience" aria-selected="false" tabindex="-1" data-tab="experience">
                     <svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg>
-                    <span>Experience</span>
+                    <span>Experience</span><span class="tab__count" aria-hidden="true">03</span>
                 </button>
                 <button class="tab" type="button" role="tab" id="tab-projects" aria-controls="projects" aria-selected="false" tabindex="-1" data-tab="projects">
                     <svg class="icon" aria-hidden="true"><use href="#i-cube"></use></svg>
-                    <span>Projects</span>
+                    <span>Projects</span><span class="tab__count" aria-hidden="true">01</span>
                 </button>
                 <button class="tab" type="button" role="tab" id="tab-skills" aria-controls="skills" aria-selected="false" tabindex="-1" data-tab="skills">
                     <svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg>
-                    <span>Technical Skills</span>
+                    <span>Skills</span><span class="tab__count" aria-hidden="true">05</span>
                 </button>
                 <button class="tab" type="button" role="tab" id="tab-certifications" aria-controls="certifications" aria-selected="false" tabindex="-1" data-tab="certifications">
                     <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
-                    <span>Certifications</span>
+                    <span>Certifications</span><span class="tab__count" aria-hidden="true">03</span>
                 </button>
             </div>
 
             <div class="panels">
                 <!-- Education -->
                 <div class="panel is-active" id="education" role="tabpanel" aria-labelledby="tab-education" tabindex="0">
-                    <h3 class="sr-only">Education</h3>
+                    <h3 class="panel__title">Education</h3>
                     <article class="card entry">
                         <div class="entry__head">
                             <div class="entry__identity">
@@ -284,7 +266,7 @@
                                 <span class="stat__label">Current year</span>
                             </li>
                             <li class="stat">
-                                <span class="stat__value">2.29</span>
+                                <span class="stat__value"> 3.11</span>
                                 <span class="stat__label">GPA</span>
                             </li>
                             <li class="stat">
@@ -296,8 +278,8 @@
                 </div>
 
                 <!-- Experience -->
-                <div class="panel" id="experience" role="tabpanel" aria-labelledby="tab-experience" tabindex="0" hidden>
-                    <h3 class="sr-only">Experience</h3>
+                <div class="panel" id="experience" role="tabpanel" aria-labelledby="tab-experience" tabindex="0">
+                    <h3 class="panel__title">Experience</h3>
                     <ol class="timeline">
                         <li class="timeline__item">
                             <span class="timeline__marker" aria-hidden="true"></span>
@@ -316,13 +298,11 @@
                                     </div>
                                 </div>
                                 <ul class="bullets">
-                                    <li>Troubleshot and repaired electronic boards and circuits for various consumer and industrial devices</li>
-                                    <li>Designed PCB layouts using tools like EasyEDA, Flux, or Proteus for prototyping and small-scale projects</li>
-                                    <li>Performed soldering and desoldering of electronic components (SMD and THT) with high precision</li>
-                                    <li>Assembled, tested, and verified the functionality of electronic circuits to ensure performance</li>
-                                    <li>Read and interpreted electrical schematics and component datasheets</li>
-                                    <li>Modified and reworked existing PCBs to improve performance or fix design errors</li>
-                                    <li>Designing and developing a company website using HTML, CSS, and JavaScript (in progress)</li>
+                                    <li>Repair electronic boards and circuits in consumer and industrial devices.</li>
+                                    <li>Design PCB layouts in EasyEDA, Flux, and Proteus for prototypes and small projects.</li>
+                                    <li>Solder, desolder, and rework SMD and through-hole components.</li>
+                                    <li>Assemble and test circuits using schematics and component datasheets.</li>
+                                    <li>Build the company website with HTML, CSS, and JavaScript (in progress).</li>
                                 </ul>
                                 <ul class="tags">
                                     <li class="tag">EasyEDA</li>
@@ -352,9 +332,9 @@
                                     </div>
                                 </div>
                                 <ul class="bullets">
-                                    <li>Contributed to technical events and collaborative student-led projects within the branch</li>
-                                    <li>Served as Head of PCB &amp; Circuit Design and Vice Head of the 3D Printing Sub-Team</li>
-                                    <li>Led design and innovation initiatives, provided training, and oversaw development of hands-on technical projects</li>
+                                    <li>Help organize technical events and build projects with other students.</li>
+                                    <li>Served as Head of PCB &amp; Circuit Design and Vice Head of the 3D Printing Sub-Team.</li>
+                                    <li>Train team members and support their circuit design and 3D printing projects.</li>
                                 </ul>
                                 <ul class="tags">
                                     <li class="tag">Leadership</li>
@@ -382,11 +362,9 @@
                                     </div>
                                 </div>
                                 <ul class="bullets">
-                                    <li>Creating and developing automation scripts using Python to improve workflows and streamline repetitive tasks, reducing time wastage by 70% and increasing profits by approximately 50%</li>
-                                    <li>Writing efficient, maintainable code for various automation processes</li>
-                                    <li>Testing scripts to ensure quality and performance</li>
-                                    <li>Updating and enhancing existing scripts to meet evolving business needs</li>
-                                    <li>Collaborating with technical teams to understand requirements and deliver custom software solutions</li>
+                                    <li>Write Python scripts for repetitive tasks, reducing wasted time by 70% and increasing profits by approximately 50%.</li>
+                                    <li>Test and maintain the scripts as the team’s needs change.</li>
+                                    <li>Work with the technical team to understand their workflow and build the tools they need.</li>
                                 </ul>
                                 <ul class="tags">
                                     <li class="tag">Python</li>
@@ -400,8 +378,8 @@
                 </div>
 
                 <!-- Projects -->
-                <div class="panel" id="projects" role="tabpanel" aria-labelledby="tab-projects" tabindex="0" hidden>
-                    <h3 class="sr-only">Projects</h3>
+                <div class="panel" id="projects" role="tabpanel" aria-labelledby="tab-projects" tabindex="0">
+                    <h3 class="panel__title">Projects</h3>
                     <div class="grid grid--projects">
                         <article class="card card--interactive project project--featured">
                             <div class="project__aside">
@@ -409,7 +387,7 @@
                                     <span class="tile" aria-hidden="true">
                                         <svg class="icon" aria-hidden="true"><use href="#i-cube"></use></svg>
                                     </span>
-                                    <span class="chip chip--accent">Graduation project</span>
+                                    <span class="chip chip--accent">School graduation project</span>
                                 </div>
                                 <h4 class="project__title">3D Printer</h4>
                                 <p class="project__dates">Oct 2022 – Oct 2023</p>
@@ -422,9 +400,9 @@
                             </div>
                             <div class="project__body">
                                 <ul class="bullets">
-                                    <li>Designed and built a functional 3D printer for school graduation</li>
-                                    <li>Managed hardware setup and calibration using Arduino-based control systems</li>
-                                    <li>Showcased practical knowledge of CAD, stepper motors, and firmware tuning</li>
+                                    <li>Designed and built a working 3D printer for school graduation.</li>
+                                    <li>Set up and calibrated the hardware with an Arduino-based control system.</li>
+                                    <li>Worked with CAD, stepper motors, and firmware tuning.</li>
                                 </ul>
                             </div>
                         </article>
@@ -432,8 +410,8 @@
                 </div>
 
                 <!-- Technical skills -->
-                <div class="panel" id="skills" role="tabpanel" aria-labelledby="tab-skills" tabindex="0" hidden>
-                    <h3 class="sr-only">Technical skills</h3>
+                <div class="panel" id="skills" role="tabpanel" aria-labelledby="tab-skills" tabindex="0">
+                    <h3 class="panel__title">Skills</h3>
                     <div class="grid grid--skills">
                         <article class="card card--interactive skill-card">
                             <div class="skill-card__head">
@@ -523,8 +501,8 @@
                 </div>
 
                 <!-- Certifications -->
-                <div class="panel" id="certifications" role="tabpanel" aria-labelledby="tab-certifications" tabindex="0" hidden>
-                    <h3 class="sr-only">Certifications</h3>
+                <div class="panel" id="certifications" role="tabpanel" aria-labelledby="tab-certifications" tabindex="0">
+                    <h3 class="panel__title">Certifications</h3>
                     <div class="grid grid--certs">
                         <article class="card card--interactive cert">
                             <div class="cert__head">
@@ -576,6 +554,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
@@ -586,10 +565,9 @@
         <div class="shell">
             <header class="section__head reveal">
                 <p class="section__eyebrow">
-                    <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
-                    <span>Contact</span>
+                    <span class="section__number">02 /</span><span>Get in touch</span>
                 </p>
-                <h2 class="section__title" id="contact-heading">Let's build something</h2>
+                <h2 class="section__title" id="contact-heading">Let’s talk.</h2>
                 <p class="section__lead">
                     Open to internships and freelance work in electronics, PCB design and Python automation.
                 </p>
@@ -625,7 +603,7 @@
                         <svg class="icon icon--brand" aria-hidden="true"><use href="#i-linkedin"></use></svg>
                     </span>
                     <span class="contact-card__label">LinkedIn</span>
-                    <span class="contact-card__value">mazen-mahmoud-529120394</span>
+                    <span class="contact-card__value">Mazen Mahmoud</span>
                     <span class="contact-card__cta">
                         <span>View profile</span>
                         <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
@@ -653,10 +631,10 @@
 <footer class="site-footer">
     <div class="shell site-footer__inner">
         <p class="site-footer__copy">© <span data-year>2026</span> Mazen Mahmoud</p>
-        <p class="site-footer__note">Built with HTML, CSS &amp; JavaScript</p>
+        <a class="site-footer__note" href="#top">Back to top <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
     </div>
 </footer>
 
-<script src="main.js" defer></script>
+<script src="main.js?v=20261113" defer></script>
 </body>
 </html>
